@@ -1,0 +1,81 @@
+/* 
+ * VARIÁVEIS GERAIS
+ * Utilizando as cores da marca SENAI (Vermelho) mescladas com um visual corporativo moderno
+ */
+:root {
+    --bg-color: #f4f7f9;
+    --card-bg: #ffffff;
+    --text-main: #333333;
+    --senai-red: #FF0000;
+    --senai-dark-red: #cc0000;
+    --primary-blue: #0078D6;
+    --success-color: #4EAA25;
+    --danger-color: #E52207;
+    --border-color: #e5e7eb;
+}
+
+/* Reset básico para garantir que o layout fique igual em todos os navegadores */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+body { 
+    background-color: var(--bg-color); 
+    color: var(--text-main); 
+    display: flex; 
+    justify-content: center; 
+    padding: 40px 20px;
+}
+
+/* Cartão principal do sistema */
+.container { 
+    max-width: 1000px; 
+    width: 100%; 
+    background: var(--card-bg); 
+    padding: 30px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+}
+
+/* Estilos de Tipografia do Cabeçalho */
+header { border-bottom: 2px solid var(--border-color); padding-bottom: 15px; margin-bottom: 25px; }
+h1 { font-size: 1.8rem; color: var(--senai-red); margin-bottom: 5px; }
+h3 { margin-bottom: 10px; color: var(--text-main); }
+p.desc { color: #666; font-size: 0.95rem; line-height: 1.5; }
+p.desc-small { color: #666; font-size: 0.85rem; margin-bottom: 15px; }
+
+/* Grid para dividir a tela: Formulário (esquerda) e Resultado (direita) */
+.main-content { display: grid; grid-template-columns: 3fr 2fr; gap: 30px; }
+@media(max-width: 768px) { .main-content { grid-template-columns: 1fr; } }
+
+/* GRUPO DE INPUTS (Formulário) */
+.input-group { margin-bottom: 15px; display: flex; flex-direction: column; }
+.input-group label { font-weight: 600; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; }
+
+/* Badges para indicar o que é obrigatório ou opcional */
+.badge { background: #e2e8f0; font-size: 0.7rem; padding: 3px 6px; border-radius: 4px; color: #475569; font-weight: 500; }
+.badge.required { background: #fee2e2; color: var(--danger-color); }
+
+/* Estilização padronizada para Inputs e Textareas */
+input[type="text"], textarea {
+    width: 100%; padding: 10px 12px; border: 1px solid var(--border-color); 
+    border-radius: 6px; font-size: 0.9rem; outline: none; transition: border 0.2s;
+}
+input[type="text"]:focus, textarea:focus { border-color: var(--primary-blue); box-shadow: 0 0 0 3px rgba(0, 120, 214, 0.1); }
+textarea { resize: vertical; min-height: 80px; }
+#context { min-height: 120px; } /* O contexto precisa de mais espaço */
+
+/* ESTILOS DA ÁREA DE RESULTADO */
+.result-panel { background: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); display: flex; flex-direction: column; }
+#outputPrompt { flex-grow: 1; min-height: 300px; background-color: #f0fdf4; border-color: var(--success-color); font-family: monospace; font-size: 0.9rem; line-height: 1.5; margin-bottom: 15px; }
+
+/* BOTÕES GERAIS */
+button { border: none; padding: 12px 15px; border-radius: 6px; font-weight: 600; cursor: pointer; transition: 0.2s; font-size: 0.95rem; width: 100%; color: white;}
+.btn-primary { background-color: var(--senai-red); margin-top: 10px; }
+.btn-primary:hover { background-color: var(--senai-dark-red); }
+
+.action-buttons { display: flex; gap: 10px; }
+.btn-success { background-color: var(--success-color); flex: 2; }
+.btn-success:hover { background-color: #3b82f6; } /* Fica azul ao passar o mouse ou copiar */
+.btn-success:disabled { background-color: #ccc; cursor: not-allowed; }
+
+.btn-danger { background-color: white; color: var(--danger-color); border: 1px solid var(--danger-color); flex: 1; }
+.btn-danger:hover { background-color: #fef2f2; }

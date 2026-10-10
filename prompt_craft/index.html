@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptCraft Pro | Engenharia de IA</title>
+    <!-- Fonte corporativa limpa -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Vincula o arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Container central da aplicação -->
+    <div class="container">
+        <header>
+            <h1>PromptCraft Pro</h1>
+            <p class="desc">Estruture prompts profissionais para LLMs (ChatGPT, Gemini) utilizando as melhores práticas: Objetivo, Contexto, Formato e Critérios (Zero/Few-Shot).</p>
+        </header>
+
+        <div class="main-content">
+            <!-- PAINEL DE ENTRADA: Onde o usuário preenche as variáveis do Prompt -->
+            <div class="form-panel">
+                
+                <!-- 1. Papel / Persona (Quem a IA deve ser) -->
+                <div class="input-group">
+                    <label for="persona">1. Persona da IA <span class="badge">Opcional</span></label>
+                    <input type="text" id="persona" placeholder="Ex: Aja como um Desenvolvedor Sênior...">
+                </div>
+
+                <!-- 2. Objetivo Principal (O que a IA deve fazer) -->
+                <div class="input-group">
+                    <label for="objective">2. Objetivo Principal (Ação) <span class="badge required">Obrigatório</span></label>
+                    <input type="text" id="objective" placeholder="Ex: Escreva um e-mail para o cliente...">
+                </div>
+
+                <!-- 3. Contexto (Evita "Alucinações" fornecendo dados reais) -->
+                <div class="input-group">
+                    <label for="context">3. Contexto / Background <span class="badge required">Obrigatório</span></label>
+                    <textarea id="context" placeholder="Forneça os dados reais. Ex: O cliente reclamou de atraso na entrega do pedido #1234..."></textarea>
+                </div>
+
+                <!-- 4. Formato de Saída (Como a IA deve responder) -->
+                <div class="input-group">
+                    <label for="format">4. Formato de Saída <span class="badge">Recomendado</span></label>
+                    <input type="text" id="format" placeholder="Ex: Em tópicos, em formato JSON, tabela Markdown...">
+                </div>
+
+                <!-- 5. Exemplos (Transforma Zero-Shot em Few-Shot) -->
+                <div class="input-group">
+                    <label for="examples">5. Exemplos (Few-Shot Learning) <span class="badge">Opcional</span></label>
+                    <textarea id="examples" placeholder="Ex: &#10;Entrada: Atraso&#10;Saída: Pedimos desculpas pelo imprevisto."></textarea>
+                </div>
+
+                <!-- Botão que dispara a montagem do Prompt no JS -->
+                <button onclick="generatePrompt()" class="btn-primary">Engenheirar Prompt</button>
+            </div>
+
+            <!-- PAINEL DE RESULTADO: Onde o Prompt final aparece -->
+            <div class="result-panel">
+                <h3>Prompt Otimizado</h3>
+                <p class="desc-small">Copie o texto abaixo e cole no seu LLM favorito.</p>
+                
+                <!-- Textarea readonly (apenas leitura) para o usuário copiar -->
+                <textarea id="outputPrompt" readonly placeholder="O prompt estruturado aparecerá aqui..."></textarea>
+                
+                <div class="action-buttons">
+                    <!-- Botão de copiar ligado à Clipboard API nativa -->
+                    <button onclick="copyPrompt()" id="btnCopy" class="btn-success" disabled>📋 Copiar Prompt</button>
+                    <button onclick="clearFields()" class="btn-danger">Limpar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vincula o motor lógico da aplicação -->
+    <script src="app.js"></script>
+</body>
+</html>
