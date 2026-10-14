@@ -44,7 +44,7 @@ An autonomous client-side web tool designed for professionals and teams interact
 The system's logic was built using Vanilla JavaScript to stringently enforce AI governance and prompt best practices:
 
 1. **Context Enforcement:** The JS engine blocks prompt generation if the core 'Objective' and 'Context' fields are missing. This is a hard-coded mitigation strategy against AI hallucinations, forcing the user to ground the prompt in actual data rather than relying on the LLM's generic training weights.
-2. **Dynamic Templating:** Leverages ES6 Template Literals to systematically concatenate non-empty fields into a highly legible, sectioned text block recognized efficiently by Transformer-based architectures.
+​2. **Dynamic Templating:** Leverages ES6 Template Literals to systematically concatenate non-empty fields into a highly legible, sectioned text block recognized efficiently by Transformer-based architectures.
 3. **Few-Shot Learning Integration:** By providing an optional 'Examples' block, the tool allows users to structurally pivot the prompt from a generic "Zero-Shot" instruction to a highly accurate "Few-Shot" pattern-matching request.
 4. **Clipboard API Integration:** Native `navigator.clipboard.writeText()` API allows users to copy the engineered prompt with a single click and immediate UX feedback.
 
@@ -53,7 +53,7 @@ The system's logic was built using Vanilla JavaScript to stringently enforce AI 
 As a native web application, the system requires no installation of packages, dependencies, databases, or servers.
 
 1. Clone this repository or download the files.
-2. Navigate to the folder and double-click the `index.html` file.
+​2. Navigate to the folder and double-click the `index.html` file.
 3. The interface will automatically open in your default web browser, fully ready for interactions and testing.
 
 <br/>
@@ -73,7 +73,7 @@ Uma ferramenta autônoma operando no lado do cliente (Client-Side) projetada par
 A lógica do sistema foi construída usando Vanilla JavaScript para impor rigorosamente a governança de IA e as melhores práticas de prompts:
 
 1. **Aplicação de Contexto:** O motor JS bloqueia a geração do prompt se os campos centrais 'Objetivo' e 'Contexto' estiverem vazios. Esta é uma estratégia de mitigação codificada contra alucinações da IA, forçando o usuário a basear o prompt em dados reais.
-2. **Templating Dinâmico:** Utiliza Template Literals (ES6) para concatenar sistematicamente campos não vazios em um bloco de texto seccionado, altamente legível e reconhecido de forma eficiente por arquiteturas baseadas em Transformadores.
+​2. **Templating Dinâmico:** Utiliza Template Literals (ES6) para concatenar sistematicamente campos não vazios em um bloco de texto seccionado, altamente legível e reconhecido de forma eficiente por arquiteturas baseadas em Transformadores.
 3. **Integração de Few-Shot Learning:** Ao fornecer um bloco opcional de 'Exemplos', a ferramenta permite aos usuários alterar estruturalmente o prompt de uma instrução genérica "Zero-Shot" para uma solicitação de correspondência de padrões "Few-Shot" altamente precisa.
 4. **Integração da API de Clipboard:** A API nativa `navigator.clipboard.writeText()` permite que os usuários copiem o prompt engenheirado com um único clique.
 
@@ -82,7 +82,7 @@ A lógica do sistema foi construída usando Vanilla JavaScript para impor rigoro
 Por ser uma aplicação web nativa, o sistema não exige instalação de pacotes, dependências, bancos de dados ou servidores.
 
 1. Faça o clone deste repositório ou o download dos arquivos.
-2. Navegue até a pasta e dê um duplo clique no arquivo `index.html`.
+​2. Navegue até a pasta e dê um duplo clique no arquivo `index.html`.
 3. A interface abrirá automaticamente no seu navegador web padrão, totalmente pronta para interações e testes.
 
 <br/>
