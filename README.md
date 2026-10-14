@@ -68,7 +68,7 @@ Uses generative artificial intelligence (AI) models responsibly and ethically, d
 
 **Course Capabilities (20 Hours):**
 1. Differentiate traditional machine learning models and generative artificial intelligence (AI) models, identifying the characteristics, applications, and limitations of each approach.
-2. Use commands in LLMs to generate different types of content, evaluating the quality and coherence of the results.
+​2. Use commands in LLMs to generate different types of content, evaluating the quality and coherence of the results.
 3. Compare different types of generative AI models by analyzing their functionalities, use cases, and potential impacts on society.
 4. Identify responsible AI principles, interpreting their ethical objectives and restricted application areas.
 5. Identify ethical problems related to biases, privacy, security, and social impact in AI use cases.
@@ -86,7 +86,7 @@ Utiliza modelos de inteligência artificial (IA) generativa de forma responsáve
 
 **Capacidades (20 Horas):**
 1. Diferenciar modelos de machine learning tradicionais e modelos generativos de inteligência artificial - IA, identificando as características, aplicações e limitações de cada abordagem.
-2. Utilizar comandos em LLMs para gerar diferentes tipos de conteúdo, avaliando a qualidade e coerência dos resultados.
+​2. Utilizar comandos em LLMs para gerar diferentes tipos de conteúdo, avaliando a qualidade e coerência dos resultados.
 3. Comparar diferentes tipos de modelos de IA generativa analisando suas funcionalidades, casos de uso e potenciais impactos na sociedade.
 4. Identificar os princípios de IA responsável, interpretando seus objetivos éticos e áreas de aplicação restritas.
 5. Identificar problemas éticos, relacionados a vieses, privacidade, segurança e impacto social em casos de uso de IA.
