@@ -5,8 +5,8 @@
     <em>SENAI - Fundamentos de Inteligência Artificial Generativa - Google Cloud</em>
   </p>
   <p>
-    <i>Choose your language:</i><br>
-    <i>Escolha seu idioma:</i><br>
+    <b>Choose your language:</b><br>
+    <b>Escolha seu idioma:</b><br>
     <a href="#english">English</a> | <a href="#portuguese">Português</a>
   </p>
 </div>
@@ -28,8 +28,8 @@
 </div>
 
 <br/>
-
----
+<hr/>
+<br/>
 
 <div align="center">
   <h2>My Site<br>Meu Site</h2>
@@ -39,8 +39,6 @@
 </div>
 
 <br/>
-
----
 
 <div align="center">
   <h2>Featured Repositories<br>Repositórios em Destaque</h2>
@@ -58,17 +56,21 @@
 </div>
 
 <br/>
+<hr/>
+<br/>
 
----
+<div id="english"></div>
 
-<h2 id="english">Profile</h2>
+<div align="center">
+  <h2>Profile</h2>
+</div>
 
 **Professional Profile:**<br>
 Uses generative artificial intelligence (AI) models responsibly and ethically, differentiating traditional machine learning models and large language models (LLMs), using prompts and parameters to guide results, based on the principles of responsible AI.
 
 **Course Capabilities (20 Hours):**
 1. Differentiate traditional machine learning models and generative artificial intelligence (AI) models, identifying the characteristics, applications, and limitations of each approach.
-​2. Use commands in LLMs to generate different types of content, evaluating the quality and coherence of the results.
+2. Use commands in LLMs to generate different types of content, evaluating the quality and coherence of the results.
 3. Compare different types of generative AI models by analyzing their functionalities, use cases, and potential impacts on society.
 4. Identify responsible AI principles, interpreting their ethical objectives and restricted application areas.
 5. Identify ethical problems related to biases, privacy, security, and social impact in AI use cases.
@@ -76,17 +78,21 @@ Uses generative artificial intelligence (AI) models responsibly and ethically, d
 7. Develop commands using parameters to guide the generative AI output in Vertex AI Studio.
 
 <br/>
+<hr/>
+<br/>
 
----
+<div id="portuguese"></div>
 
-<h2 id="portuguese">Perfil</h2>
+<div align="center">
+  <h2>Perfil</h2>
+</div>
 
 **Perfil Profissional / Conteúdo Programático:**<br>
 Utiliza modelos de inteligência artificial (IA) generativa de forma responsável e ética, diferenciando modelos de machine learning e modelos de linguagem grande (LLMs), utilizando prompts e parâmetros para orientar os resultados, baseando-se nos princípios de IA responsável.
 
 **Capacidades (20 Horas):**
 1. Diferenciar modelos de machine learning tradicionais e modelos generativos de inteligência artificial - IA, identificando as características, aplicações e limitações de cada abordagem.
-​2. Utilizar comandos em LLMs para gerar diferentes tipos de conteúdo, avaliando a qualidade e coerência dos resultados.
+2. Utilizar comandos em LLMs para gerar diferentes tipos de conteúdo, avaliando a qualidade e coerência dos resultados.
 3. Comparar diferentes tipos de modelos de IA generativa analisando suas funcionalidades, casos de uso e potenciais impactos na sociedade.
 4. Identificar os princípios de IA responsável, interpretando seus objetivos éticos e áreas de aplicação restritas.
 5. Identificar problemas éticos, relacionados a vieses, privacidade, segurança e impacto social em casos de uso de IA.
@@ -94,8 +100,8 @@ Utiliza modelos de inteligência artificial (IA) generativa de forma responsáve
 7. Desenvolver comandos utilizando parâmetros para orientar a saída generativa de IA no Vertex AI Studio.
 
 <br/>
-
----
+<hr/>
+<br/>
 
 <div align="center">
   <h2>GitHub Stats<br>Estatísticas do GitHub</h2>
@@ -104,8 +110,6 @@ Utiliza modelos de inteligência artificial (IA) generativa de forma responsáve
 </div>
 
 <br/>
-
----
 
 <div align="center">
   <h3>Contact<br>Contato</h3>
